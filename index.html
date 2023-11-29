@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- Container -->
+    <div class="container">
+      <!-- Advice heading -->
+      <h1 id="title"></h1>
+      <!-- Paragraph where advice goes -->
+      <p id="text"></p>
+      <!-- the divider -->
+      <div id="picture">
+        <img src="/advice-api/images/pattern-divider-desktop.svg" alt="">
+      </div>
+      <!-- button -->
+      <div>
+      <button onclick="fetchAdvice()">
+        <img src="/advice-api/images/icon-dice.svg" alt="">
+      </button>
+      </div>
+    </div>
+    
+  <script src="/advice-api/main.js"></script>
 </body>
 </html>
